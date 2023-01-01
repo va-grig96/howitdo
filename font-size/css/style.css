@@ -1,0 +1,58 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    background-color: #383838;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 14px;
+}
+
+.header {
+    background-color: #1b1b1b;
+    padding: 30px;
+}
+
+.content {
+    padding: 30px;
+}
+
+h1 {
+/*  font-size: 40px;*/
+    font-weight: 900;
+    font-size: calc(24px + 16 * (100vw / 1280));
+/*  размер в мобилке + (рамер по макету - размер в мобилке) * (100vw / ширина всего макета)  */
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+    }
+    h2 {
+        font-size: calc(18px + (12 + 12 * 0.7) * ((100vw - 320px) / 1280));
+    }
+    p {
+        font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1280));
+    }
+}
+
+h2 {
+/*  font-size: 30px;*/
+    font-size: calc(18px + 12 * (100vw / 1280));
+    font-weight: 900;
+    margin: 0 0 20px 0;
+}
+
+p {
+/*  font-size: 18px;*/
+    font-size: calc(14px + 4 * (100vw / 1280));
+    margin: 0 0 20px 0;
+}
