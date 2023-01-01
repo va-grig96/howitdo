@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lazy Load</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="page">
+            <div class="page__container">
+                <section class="page__section page__section_1">
+                    <h1 class="page__title">Я заголовок</h1>
+                    <div class="page__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                    </div>
+                </section>
+                <section class="page__section page__section_2">
+                    <h2 class="page__sub-title">Я подзаголовок</h2>
+                    <div class="page__images">
+                        <div class="page__image">
+                            <img data-src="https://via.placeholder.com/200" src="https://via.placeholder.com/1" alt="">
+                        </div>
+                        <div class="page__image">
+                            <img data-src="https://via.placeholder.com/200" src="https://via.placeholder.com/1" alt="">
+                        </div>
+                        <div class="page__image">
+                            <picture>
+                                <source data-srcset="https://via.placeholder.com/200" srcset="https://via.placeholder.com/1" type="image/webp">
+                                <img data-src="https://via.placeholder.com/200" src="https://via.placeholder.com/1" alt="">
+                            </picture>
+                        </div>
+                        <div class="page__image">
+                            <img data-src="https://via.placeholder.com/200" src="https://via.placeholder.com/1" alt="">
+                        </div>
+                        <div class="page__image">
+                            <img data-src="https://via.placeholder.com/200" src="https://via.placeholder.com/1" alt="">
+                        </div>
+                        <div class="page__image">
+                            <img data-src="https://via.placeholder.com/200" src="https://via.placeholder.com/1" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="page__section page__section_3">
+                    <h2 class="page__sub-title">Я подзаголовок</h2>
+                    <div class="page__map _load-map" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2365.243079623241!2d55.95989231571259!3d53.64263776017768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d811a356033531%3A0xc691408312b2c695!2z0YPQuy4g0KHRg9Cy0L7RgNC-0LLQsCwgNiwg0KHRgtC10YDQu9C40YLQsNC80LDQuiwg0KDQtdGB0L8uINCR0LDRiNC60L7RgNGC0L7RgdGC0LDQvSwgNDUzMTA0!5e0!3m2!1sru!2sru!4v1629873203185!5m2!1sru!2sru">
+                    </div>
+                </section>
+                <section class="page__section page__section_1">
+                    <h2 class="page__sub-title">Я подзаголовок</h2>
+                    <div class="page__text _load-more">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nihil, labore voluptatibus repellat praesentium. Porro accusamus, sapiente suscipit excepturi magnam illo nemo provident dicta assumenda quos enim placeat dolores, asperiores!</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
