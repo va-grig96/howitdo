@@ -1,32 +1,38 @@
 <!--
-Пример создан сайтом: http://blogjquery.ru/zamena-standartnogo-alert-prompt-confirm-stilizaciya-alert/
+пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: http://blogjquery.ru/zamena-standartnogo-alert-prompt-confirm-stilizaciya-alert/
  -->
 
 <html>
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
 <body>
-<link charset="utf-8" rel="stylesheet" type="text/css" href="smoke-pure.css" />
-<script type="text/javascript" src="smoke-pure.js"></script>
-<script type="text/javascript">
+	<link charset="utf-8" rel="stylesheet" type="text/css" href="smoke-pure.css" />
+	<script type="text/javascript" src="smoke-pure.js"></script>
+	<script type="text/javascript">
 
-//Обычный alert
-smoke.alert ("Заменяет стандартный alert, prompt, confirm на свои с возможностью вставки <b>html кода</b> прямо внутрь alert-a <br> Также имеет множество настроек в <b>smoke-pure.js</b> и вызывать функции в зависимости от нажатия кнопок.");
+		//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ alert
+		smoke.alert("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ alert, prompt, confirm пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ <b>html пїЅпїЅпїЅпїЅ</b> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ alert-a <br> пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ <b>smoke-pure.js</b> пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.");
 
-//Подтверждение действия
-/*
-smoke.confirm ("Вы действительно хотите удалить файл?", function (result) {
-if (result === false) return;                                                   //Выбрали отмена
-smoke.alert ("Файл был удален!", function (result) {window.location = '';})
-})
-*/
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		/*
+		smoke.confirm ("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ?", function (result) {
+		if (result === false) return;                                                   //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		smoke.alert ("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!", function (result) {window.location = '';})
+		})
+		*/
 
-//Просьба ввести что-то
-/*
-smoke.prompt ("Введите ваше имя", function (result) {
-if (result === false) return;                                                   //Выбрали отмена
-smoke.alert ("Вы ввели \"" + result + "\".");
-})
-*/
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ
+		/*
+		smoke.prompt ("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ", function (result) {
+		if (result === false) return;                                                   //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		smoke.alert ("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ \"" + result + "\".");
+		})
+		*/
 
-</script>
+	</script>
 </body>
+
 </html>
