@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://fls.guru/transform.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>CSS transform. 2D и 3D трансформации // «Фрилансер по жизни»</title>
+		
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="./index_files/style.css">
+		<link rel="shortcut icon" href="https://fls.guru/favicon.ico">
+		<!-- <meta name="robots" content="noindex, nofollow"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script data-ad-client="ca-pub-6890231737112341" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	</head>
+	<body>
+		<div class="wrapper loaded">
+			<div class="wrapper-content">
+				<div class="wrapper-body">
+<header class="header">
+	<div class="header__container container">
+		<div class="header__body">
+
+			<!-- LOGO -->
+			<a href="http://fls.guru/" class="header__logo logo">Фрилансер по жизни</a>
+
+
+			<!-- MENU -->
+			<nav class="header-menu">
+				<ul class="header-menu__list">
+					<li><a href="http://fls.guru/" class="header-menu__link">Главная</a></li>
+					<li class="header-menu__item-list">
+						<span href="" class="header-menu__link">Обучение</span>
+						<span class="header-menu__arrow arrow-header"></span>
+						<ul class="sub-menu__list">
+							<li>
+								<a target="_blank" href="http://fls.guru/sublime.html" class="sub-menu__link">Настройка Sublime Text 3</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/bidexample.html" class="sub-menu__link">Шаблон заявки к заказу</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/cssbackground.html" class="sub-menu__link">CSS свойства background</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/cssposition.html" class="sub-menu__link">CSS свойства position</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/flexbox.html" class="sub-menu__link">Шпаргалка по FLEX</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/css-units.html" class="sub-menu__link">Единицы измерения CSS</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/ibg.html" class="sub-menu__link">Применение класса "ibg"</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/csstransition.html" class="sub-menu__link">CSS свойства transition</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/cssanimation.html" class="sub-menu__link">animation и @keyframes</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/slick.html" class="sub-menu__link">Шпаргалка Slick Slider</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/transform.html" class="sub-menu__link">Шпаргалка CSS Transform</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/grid.html" class="sub-menu__link">Шпаргалка CSS Grid</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/gulp.html" class="sub-menu__link">Gulp сценарий</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/js-reservedkeywords.html" class="sub-menu__link">Зарезервированные слова JS</a>
+							</li>
+						</ul>
+					</li>
+					<li><a target="_blank" href="http://fls.guru/itprofessions.html" class="header-menu__link">IT-профессии</a></li>
+					<!-- <li><a target="_blank" href="#" class="header-menu__link">Блог</a></li>	 -->
+				</ul>
+			</nav>
+
+
+
+		</div>
+	</div>
+</header>
+					<div class="content">
+
+						<!-- CSS свойство transform -->
+						<div class="cssbackground">
+							<div class="cssbackground__container container">
+
+								<!-- Заголовок блока -->
+								<div class="cssbackground__name name-block">
+									<h1 class="cssbackground__title title"><span>CSS transform. 2D и 3D трансформации // «Фрилансер по жизни»</span></h1>
+									<div class="cssbackground__name-bg">
+										<img src="./index_files/title-bg.png" alt="">
+									</div>
+									
+								</div>								
+								
+
+								<!-- Главный первый блок -->
+								<div class="cssbackground__main-block">
+									<h2 class="cssbackground__block-title block-title">Что такое 2D и 3D трансформации?</h2>
+									<p class="cssbackground__block-descr block-descr">
+										С помощью 2D и 3D трансформации мы сможем сдвигать, поворачивать, масштабировать элементы и делать многое другое! Задается трансформация свойством transform и следующими значениями:
+									</p>
+								</div>
+
+								<!-- Средний блок со спойлерами -->
+								<div class="cssbackground__middle-block middle-block">
+
+									<!-- 2D -->
+
+									<!-- Первый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Translate (x, y)</h3>
+												<div class="spoller__subtitle">Сдвигает элемент на новое место, перемещая относительно изначального положения объекта вправо и вниз, используя координаты X и Y. Записывается следующим образом translate (x,y).</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">0, 0<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">30px, 30px</div>
+												<div class="nav-sector__item tab__navitem">30%, -10%</div>														
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:translate(0px,0px)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">По умолчанию</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>translate(0px, 0px)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:translate(30px,30px)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->		
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>translate(30px, 30px)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>												
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:translate(30%, -5%)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->			
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>translate(30%, -10%)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>													
+
+											</div>
+										</div>
+									</div>		
+
+									<!-- Второй сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Scale (x, y)</h3>
+												<div class="spoller__subtitle">Масштабирует элементы, делая их больше или меньше.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">1, 1<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">0.5, 0.2</div>
+												<div class="nav-sector__item tab__navitem">2</div>														
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:scale(1,1)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">По умолчанию</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>scale(1, 1)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:scale(0.5,0.2)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->		
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>scale(0.5, 0.2)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>												
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:scale(2)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->			
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>scale(2)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>													
+
+											</div>
+										</div>
+									</div>	
+
+									<!-- Третий сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Rotate (n + deg)</h3>
+												<div class="spoller__subtitle">Поворачивает элементы.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">0deg<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">45deg<small>по часовой</small></div>
+												<div class="nav-sector__item tab__navitem">-10deg<small>против часовой</small></div>														
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:rotate(0deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">По умолчанию</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>rotate(0deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:rotate(45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->		
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>rotate(45deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>												
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:rotate(-10deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->			
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+													<small>/* стили оболочки */</small>
+													<p class="code-item__main">.block__wrapper{</p>
+													<span class="code-item__descr">width: 150px;</span>
+													<span class="code-item__descr">height: 150px;</span>
+													<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+													<p class="code-item__main">}</p>
+													<small>/* стили блока */</small>
+													<p class="code-item__main">.block{</p>
+													<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+													<span class="code-item__descr">width: 100%;</span>
+													<span class="code-item__descr">height: 100%;</span>
+													<span class="code-item__descr"><b>transform: <strong>rotate(-10deg)</strong>;</b></span>
+													<p class="code-item__main">}</p>
+													</div>												
+
+												</div>													
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Четвертый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Skew (x + deg, y + deg)</h3>
+												<div class="spoller__subtitle">Деформирует (наклоняет) элементы.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">0deg, 0deg<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">10deg, 10deg</div>
+												<div class="nav-sector__item tab__navitem">0deg, -10deg</div>		
+												<div class="nav-sector__item tab__navitem">20deg</div>														
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:skew(0deg,0deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">По умолчанию</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>skew(0deg,0deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:skew(10deg,10deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->		
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>skew(10deg,10deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>												
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:skew(0deg,-10deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->			
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>skew(0deg,-10deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>	
+
+												<!-- Четвертый таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:skew(20deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->			
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>skew(20deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>												
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Пятый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Matrix (a, c, b, d, x, y)</h3>
+												<div class="spoller__subtitle">Позволяет объединить несколько функций 2D-трансформаций в одной.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">1, 0, 0, 1, 0, 0<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">0.5, 0.1, 0.1, 0.5, 10, 15</div>												
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:matrix(1, 0, 0, 1, 0, 0)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">
+														Значение <strong>a</strong> изменяет масштаб по горизонтали. Значение от 0 до 1 уменьшает элемент, больше 1 — увеличивает.
+														Значение <strong>c</strong> деформирует (сдвигает) стороны элемента по оси Y, положительное значение — вверх, отрицательное — вниз.
+														Значение <strong>b</strong> деформирует (сдвигает) стороны элемента по оси X, положительное значение — влево, отрицательное — вправо.
+														Значение <strong>d</strong> изменяет масштаб по вертикали. Значение меньше 1 уменьшает элемент, больше 1 — увеличивает.
+														Значение <strong>x</strong> смещает элемент по оси X, положительное — вправо, отрицательное — влево.
+														Значение <strong>y</strong> смещает элемент по оси Y, положительное значение — вниз, отрицательное — вверх.
+													</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>matrix(1, 0, 0, 1, 0, 0)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:matrix(0.5, 0.1, 0.1, 0.5, 10, 15)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<p class="block-item__text">
+														Значение <strong>a</strong> изменяет масштаб по горизонтали. Значение от 0 до 1 уменьшает элемент, больше 1 — увеличивает.
+														Значение <strong>c</strong> деформирует (сдвигает) стороны элемента по оси Y, положительное значение — вверх, отрицательное — вниз.
+														Значение <strong>b</strong> деформирует (сдвигает) стороны элемента по оси X, положительное значение — влево, отрицательное — вправо.
+														Значение <strong>d</strong> изменяет масштаб по вертикали. Значение меньше 1 уменьшает элемент, больше 1 — увеличивает.
+														Значение <strong>x</strong> смещает элемент по оси X, положительное — вправо, отрицательное — влево.
+														Значение <strong>y</strong> смещает элемент по оси Y, положительное значение — вниз, отрицательное — вверх.
+													</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>matrix(0.5, 0.1, 0.1, 0.5, 10, 15)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>																							
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Шестой сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Множественные 2D трансформации</h3>
+												<div class="spoller__subtitle">Позволяет объединить несколько функций 2D-трансформаций в одной.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">translate + rotate + scale</div>																				
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:translate(30px, 30px) rotate(45deg) scale(0.8)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>translate(30px, 30px) rotate(45deg) scale(0.8)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>												
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Седьмой сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Transform-origin</h3>
+												<div class="spoller__subtitle">Позволяет сместить центр трансформации, относительно которого происходит изменение положения/размера/формы элемента.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">center (50% 50%) <small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">top left (0 0)</div>												
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform-origin:center; transform:rotate(45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform-origin:<strong>center;</strong></b></span>
+														<span class="code-item__descr"><b>transform: rotate(45deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform-origin:top left; transform:rotate(45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform-origin:<strong>top left;</strong></b></span>
+														<span class="code-item__descr"><b>transform: rotate(45deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>																							
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Восьмой сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Perspective, perspective-origin</h3>
+												<div class="spoller__subtitle">Установка глубины и смена точки начала координат.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem tab__navitem_big active">perspective: 0 <small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem tab__navitem_big">perspective: 400px</div>
+												<div class="nav-sector__item tab__navitem tab__navitem_big">perspective-origin: center (50% 50%)<small>по умолчанию</small></div>		
+												<div class="nav-sector__item tab__navitem tab__navitem_big">perspective-origin:left top (0 0)</div>														
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:rotateX(45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>0</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateX(45deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:rotateX(45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->		
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateX(45deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>												
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:rotateX(45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->			
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<span class="code-item__descr"><b>perspective-origin: <strong>center</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateX(45deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>	
+
+												<!-- Четвертый таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;perspective-origin:0 0;" class="transform__wrapper">
+																	<div style="transform:rotateX(45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->			
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<span class="code-item__descr"><b>perspective-origin: <strong>0 0</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateX(45deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>												
+
+											</div>
+										</div>
+									</div>
+
+									<!-- 3D -->
+
+									<!-- Девятый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Translate3d (x, y, z)</h3>
+												<div class="spoller__subtitle">По аналогии со своим 2D братом, это значение задает перемещение элемента, но в 3D-пространстве. Помимо оси X и Y добавляется ось Z.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">0, 0, 0<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">30px, 30px, 30px</div>												
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:translate3d(0px,0px,0px)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>translate3d(0px, 0px, 0px)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:translate3d(30px,30px,30px)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>translate3d(30px, 30px, 30px)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>																							
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Десятый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Scale3d (x, y, z)</h3>
+												<div class="spoller__subtitle">Задает трехмерное масштабирование по одной из осей X Y Z. Фактически повторяет функционал своего 2d аналога.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">1, 1, 1<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">1.5, 1.5, 1.5</div>												
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:scale3d(1,1,1)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>scale3d(1, 1, 1)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:scale3d(1.5,1.5,1.5)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>scale3d(1.5, 1.5, 1.5)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>																							
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Одиннадцатый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Rotate3d (x, y, z, deg)</h3>
+												<div class="spoller__subtitle">Вращает элемент относительно трех осей. Элемент поворачивается под углом, задаваемым последним параметром относительно вектора направления x,y,z.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">1, 1, 1, 0deg<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">1, 1, 1, 45deg</div>												
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div class="transform__wrapper">
+																	<div style="transform:rotate3d(1, 1, 1, 0deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>rotate3d(1, 1, 1, 0deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>												
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:rotate3d(1, 1, 1, 45deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective: <strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>rotate3d(1, 1, 1, 45deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>																							
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Двенадцатый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Matrix3d (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</h3>
+												<div class="spoller__subtitle">Задает трехмерное преобразование как однородную матрицу размером 4×4 с шестнадцатью значениями в столбцах.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">										
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Пояснение -->
+													<p class="block-item__text">
+														Генератор 3D матриц - <a class="block-item__link" href="http://ds-overdesign.com/transform/matrix3d.html" target="_blank">http://ds-overdesign.com/transform/matrix3d.html</a>
+													</p>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Тринадцатый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Множественные 3D трансформации</h3>
+												<div class="spoller__subtitle">Позволяет объединить несколько функций 3D-трансформаций в одной.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">translate3d + rotate3d</div>																				
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:translate3d(30px, 30px,30px) rotate3d(1,1,1,30deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective:<strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: <strong>translate3d(30px, 30px,30px) rotate3d(1,1,1,30deg)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>						
+
+												</div>					
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Четырнадцатый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Transform-style</h3>
+												<div class="spoller__subtitle">Определяет, как дочерние элементы должны отображаться в 3D-пространстве.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">flat <small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">preserve-3d</div>												
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:rotateY(30deg)" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective:<strong>400px</strong>;</b></span>
+														<span class="code-item__descr"><b>transform-style:<strong>flat</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateY(30deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>						
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px; transform-style:preserve-3d;" class="transform__wrapper">
+																	<div style="transform:rotateY(30deg);" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective:<strong>400px</strong>;</b></span>
+														<span class="code-item__descr"><b>transform-style:<strong>preserve-3d</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateY(30deg);</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Пятнадцатый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Backface-visibility</h3>
+												<div class="spoller__subtitle">Отображение обратной стороны объекта.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">visible <small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">hidden</div>												
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:rotateY(150deg)" class="transform__block">visible</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective:<strong>400px</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateY(150deg);</b></span>
+														<span class="code-item__descr"><b>backface-visibility: <strong>visible</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>					
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transform">
+																<div style="perspective:400px;" class="transform__wrapper">
+																	<div style="transform:rotateY(150deg);backface-visibility:hidden;" class="transform__block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* стили оболочки */</small>
+														<p class="code-item__main">.block__wrapper{</p>
+														<span class="code-item__descr">width: 150px;</span>
+														<span class="code-item__descr">height: 150px;</span>
+														<span class="code-item__descr">background-color: <i style="background-color: rgba(24, 181, 165, 0.2);">rgba(24, 181, 165, 0.2);</i></span>
+														<span class="code-item__descr"><b>perspective:<strong>400px</strong>;</b></span>
+
+														<p class="code-item__main">}</p>
+														<small>/* стили блока */</small>
+														<p class="code-item__main">.block{</p>
+														<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4;</i></span>
+														<span class="code-item__descr">width: 100%;</span>
+														<span class="code-item__descr">height: 100%;</span>
+														<span class="code-item__descr"><b>transform: rotateY(150deg);</b></span>
+														<span class="code-item__descr"><b>backface-visibility: <strong>hidden</strong>;</b></span>
+														<p class="code-item__main">}</p>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<!-- Последний блок -->
+								<div class="cssbackground__bottom-block">
+									<h4 class="cssbackground__block-subtitle block-subtitle"><span>Шпаргалка является дополнением к выпуску «CSS transform // 2D и 3D трансформации»</span></h4>
+									<div class="cssbackground__block-video block-video">
+										<iframe src="./index_files/uQEGUpsnqsw.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+									</div>
+								</div>
+
+							</div>
+						</div>						
+						
+					</div>
+
+
+<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__row">
+			
+			<!-- Первая колонка -->
+			<div class="footer__main">
+				<a class="footer__logo logo" target="_blank" href="https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA">Фрилансер по жизни</a>
+				<div class="footer__descr">YouTube канал</div>
+			</div>
+
+			<!-- Остальные колонки -->				
+			<!-- Вторая -->
+			<div class="footer__column footer__column_1">
+				<div class="footer__title"><span>Соц. сети</span></div>
+				<a target="_blank" href="https://www.facebook.com/freelancerlifestyle/" class="footer__link">FaceBook</a>
+				<a target="_blank" href="https://www.instagram.com/freelancer.lifestyle/" class="footer__link">Instagram</a>
+				
+			</div>
+
+			<!-- Третья -->
+			<div class="footer__column footer__column_2">
+				<div class="footer__title"><span>Полезности</span></div>
+				<a target="_blank" href="http://fls.guru/sublime.html" class="footer__link">Настройка Sublime Text 3</a>
+				<a target="_blank" href="http://fls.guru/bidexample.html" class="footer__link">Шаблон заявки к заказу</a>
+				<a target="_blank" href="http://fls.guru/cssbackground.html" class="footer__link">Шпаргалка CSS свойства</a>
+				<a target="_blank" href="http://fls.guru/flexbox.html" class="footer__link">Шпаргалка по FLEX</a>
+			</div>
+
+			<!-- Последняя -->
+			<div class="footer__column footer__column_3">
+				<div class="footer__subtitle"><span>Проблемы с вёрсткой</span></div>
+				<div class="footer__title"><span>или фронтенд разработкой?</span></div>
+				<a target="_blank" href="https://t.me/flschat" class="footer__btn">Задай свой вопрос</a>					
+			</div>
+
+			
+		</div>
+	</div>
+</footer>
+<svg display="none">	
+
+	<symbol id="spoller-cross" viewBox="0 0 30 30">
+		<path d="M15 1V29" stroke="#ADADAD" stroke-width="2" stroke-linecap="round"></path>
+		<path d="M1 15L29 15" stroke="#ADADAD" stroke-width="2" stroke-linecap="round"></path>
+	</symbol>
+	
+</svg>
+
+
+
+				</div>
+			</div>
+
+
+
+			
+
+		</div>
+<div class="popup">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title"></div>
+				<div class="popup__txt"></div>
+				<form action="https://fls.guru/transform.html#" class="popup-form form">
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input">
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email">
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req">
+					</div>
+					<div class="form-button">
+						<button type="submit" class="form__btn btn fw"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-video">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-close"></div>
+			<div class="popup-video__value video"></div>
+		</div>
+	</div>
+</div><script src="./index_files/jquery-3.3.1.min.js.Без названия"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+<script src="./index_files/vendors.js.Без названия"></script>
+<script src="./index_files/main.js.Без названия"></script>
+<script src="./index_files/custom.js.Без названия"></script>
+	
+</body></html>
