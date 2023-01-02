@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://fls.guru/csstransition.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>CSS переходы (CSS transition) // «Фрилансер по жизни»</title>
+		
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="./index_files/style.css">
+		<link rel="shortcut icon" href="https://fls.guru/favicon.ico">
+		<!-- <meta name="robots" content="noindex, nofollow"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script data-ad-client="ca-pub-6890231737112341" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	</head>
+	<body>
+		<div class="wrapper loaded">
+			<div class="wrapper-content">
+				<div class="wrapper-body">
+<header class="header">
+	<div class="header__container container">
+		<div class="header__body">
+
+			<!-- LOGO -->
+			<a href="http://fls.guru/" class="header__logo logo">Фрилансер по жизни</a>
+
+
+			<!-- MENU -->
+			<nav class="header-menu">
+				<ul class="header-menu__list">
+					<li><a href="http://fls.guru/" class="header-menu__link">Главная</a></li>
+					<li class="header-menu__item-list">
+						<span href="" class="header-menu__link">Обучение</span>
+						<span class="header-menu__arrow arrow-header"></span>
+						<ul class="sub-menu__list">
+							<li>
+								<a target="_blank" href="http://fls.guru/sublime.html" class="sub-menu__link">Настройка Sublime Text 3</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/bidexample.html" class="sub-menu__link">Шаблон заявки к заказу</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/cssbackground.html" class="sub-menu__link">CSS свойства background</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/cssposition.html" class="sub-menu__link">CSS свойства position</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/flexbox.html" class="sub-menu__link">Шпаргалка по FLEX</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/css-units.html" class="sub-menu__link">Единицы измерения CSS</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/ibg.html" class="sub-menu__link">Применение класса "ibg"</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/csstransition.html" class="sub-menu__link">CSS свойства transition</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/cssanimation.html" class="sub-menu__link">animation и @keyframes</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/slick.html" class="sub-menu__link">Шпаргалка Slick Slider</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/transform.html" class="sub-menu__link">Шпаргалка CSS Transform</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/grid.html" class="sub-menu__link">Шпаргалка CSS Grid</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/gulp.html" class="sub-menu__link">Gulp сценарий</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://fls.guru/js-reservedkeywords.html" class="sub-menu__link">Зарезервированные слова JS</a>
+							</li>
+						</ul>
+					</li>
+					<li><a target="_blank" href="http://fls.guru/itprofessions.html" class="header-menu__link">IT-профессии</a></li>
+					<!-- <li><a target="_blank" href="#" class="header-menu__link">Блог</a></li>	 -->
+				</ul>
+			</nav>
+
+
+
+		</div>
+	</div>
+</header>
+
+					<div class="content">
+
+						<!-- CSS свойство transition -->
+						<div class="cssbackground">
+							<div class="cssbackground__container container">
+
+								<!-- Заголовок блока -->
+								<div class="cssbackground__name name-block">
+									<h1 class="cssbackground__title title"><span>CSS переходы (CSS transition) // «Фрилансер по жизни»</span></h1>
+									<div class="cssbackground__name-bg">
+										<img src="./index_files/title-bg.png" alt="">
+									</div>
+									
+								</div>								
+
+								<!-- Главный первый блок -->
+								<div class="cssbackground__main-block">
+									<h2 class="cssbackground__block-title block-title">Что такое CSS переходы?</h2>
+									<p class="cssbackground__block-descr block-descr">
+										CSS – переходы либо CSS – transitions могут применяться ко всем элементам и даже к псевдоэлементам. Используются для оживления нашей верстки. Что в свою очередь приводит к улучшению взаимодействия с пользователем, как правило путем приятной анимированной реакции на его действия. Например – наведение и нажатие на кнопку. Также свойства transition можно использовать для построения несложных сценариев анимации. Фактически, CSS – переходы обеспечивают смену значений других свойств с определенной анимацей и сценарием. Всю эту магию можно описать универсальным CSS свойcтвом transition, либо рядом следующих отдельных свойств:
+									</p>
+								</div>
+
+								<!-- Средний блок со спойлерами -->
+								<div class="cssbackground__middle-block middle-block">
+
+									<!-- Первый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Transition-duration</h3>
+												<div class="spoller__subtitle">Определяет промежуток времени, в течение которого должен осуществляться переход. Собственно – тут мы указываем время за которое одно значение свойства по переходит (анимируется) в другое. Свойство не наследуется.</div>
+											</div>
+											<div class="spoller__icons">						
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">0s<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">1s</div>
+												<div class="nav-sector__item tab__navitem">500ms<small>или 0.5s</small></div>
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition-duration:0s;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Анимация при смене значений свойств происходить <strong>не будет</strong></p>
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition-duration:1s;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Анимация при смене значений свойств будет происходить за <strong>1 секунду</strong></p>
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>						
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>1s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>1s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>													
+
+												</div>
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition-duration:500ms;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Анимация при смене значений свойств будет происходить за <strong>500 миллисекунд</strong></p>
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>						
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>500ms</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>500ms</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>													
+
+												</div>											
+
+											</div>
+										</div>
+									</div>
+
+									<!-- Второй сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Transition-property</h3>
+												<div class="spoller__subtitle">Содержит название CSS-свойств, к которым будет применен эффект перехода. Значение свойства может содержать как одно свойство, так и список свойств через запятую. Свойство не наследуется.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">All<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">Имя свойства</div>
+												<div class="nav-sector__item tab__navitem">Имена нескольких свойств</div>
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход будет применен <strong>ко всем</strong> свойствам поддерживающим анимацию</p>
+
+													<!-- Встроенный спойлер -->
+													<div class="itprofessions-list-item transitions-spoller">
+														<div class="itprofessions-list-item-header spoller">	
+															<div class="itprofessions-list-item-header__title">Шпаргалка CSS свойств, которые можно анимировать</div>
+														</div>
+														<div class="itprofessions-sublist transitions-spoller-body">
+															<ul class="transitions-spoller-list">
+																<li>-moz-outline-radius</li>
+																<li>-moz-outline-radius-bottomleft</li>
+																<li>-moz-outline-radius-bottomright</li>
+																<li>-moz-outline-radius-topleft</li>
+																<li>-moz-outline-radius-topright</li>
+																<li>-webkit-line-clamp</li>
+																<li>-webkit-text-fill-color</li>
+																<li>-webkit-text-stroke</li>
+																<li>-webkit-text-stroke-color</li>
+																<li>all</li>
+																<li>backdrop-filter</li>
+																<li>background</li>
+																<li>background-color</li>
+																<li>background-position</li>
+																<li>background-size</li>
+																<li>border</li>
+																<li>border-bottom</li>
+																<li>border-bottom-color</li>
+																<li>border-bottom-left-radius</li>
+																<li>border-bottom-right-radius</li>
+																<li>border-bottom-width</li>
+																<li>border-color</li>
+																<li>border-end-end-radius</li>
+																<li>border-end-start-radius</li>
+																<li>border-image-outset</li>
+																<li>border-image-slice</li>
+																<li>border-image-width</li>
+																<li>border-left</li>
+																<li>border-left-color</li>
+																<li>border-left-width</li>
+																<li>border-radius</li>
+																<li>border-right</li>
+																<li>border-right-color</li>
+																<li>border-right-width</li>
+																<li>border-start-end-radius</li>
+																<li>border-start-start-radius</li>
+																<li>border-top</li>
+																<li>border-top-color</li>
+																<li>border-top-left-radius</li>
+																<li>border-top-right-radius</li>
+																<li>border-top-width</li>
+																<li>border-width</li>
+																<li>bottom</li>
+																<li>box-shadow</li>
+																<li>caret-color</li>
+																<li>clip</li>
+																<li>clip-path</li>
+																<li>color</li>
+																<li>column-count</li>
+																<li>column-gap</li>
+																<li>column-rule</li>
+																<li>column-rule-color</li>
+																<li>column-rule-width</li>
+																<li>column-width</li>
+																<li>columns</li>
+																<li>filter</li>
+																<li>flex</li>
+																<li>flex-basis</li>
+																<li>flex-grow</li>
+																<li>flex-shrink</li>
+																<li>font</li>
+																<li>font-size</li>
+																<li>font-size-adjust</li>
+																<li>font-stretch</li>
+																<li>font-variation-settings</li>
+																<li>font-weight</li>
+																<li>gap</li>
+																<li>grid-column-gap</li>
+																<li>grid-gap</li>
+																<li>grid-row-gap</li>
+																<li>grid-template-columns</li>
+																<li>grid-template-rows</li>
+																<li>height</li>
+																<li>inset</li>
+																<li>inset-block</li>
+																<li>inset-block-end</li>
+																<li>inset-block-start</li>
+																<li>inset-inline</li>
+																<li>inset-inline-end</li>
+																<li>inset-inline-start</li>
+																<li>left</li>
+																<li>letter-spacing</li>
+																<li>line-clamp</li>
+																<li>line-height</li>
+																<li>margin</li>
+																<li>margin-bottom</li>
+																<li>margin-left</li>
+																<li>margin-right</li>
+																<li>margin-top</li>
+																<li>mask</li>
+																<li>mask-border</li>
+																<li>mask-position</li>
+																<li>mask-size</li>
+																<li>max-height</li>
+																<li>max-lines</li>
+																<li>max-width</li>
+																<li>min-height</li>
+																<li>min-width</li>
+																<li>object-position</li>
+																<li>offset</li>
+																<li>offset-anchor</li>
+																<li>offset-distance</li>
+																<li>offset-path</li>
+																<li>offset-position</li>
+																<li>offset-rotate</li>
+																<li>opacity</li>
+																<li>order</li>
+																<li>outline</li>
+																<li>outline-color</li>
+																<li>outline-offset</li>
+																<li>outline-width</li>
+																<li>padding</li>
+																<li>padding-bottom</li>
+																<li>padding-left</li>
+																<li>padding-right</li>
+																<li>padding-top</li>
+																<li>perspective</li>
+																<li>perspective-origin</li>
+																<li>right</li>
+																<li>rotate</li>
+																<li>row-gap</li>
+																<li>scale</li>
+																<li>scroll-margin</li>
+																<li>scroll-margin-block</li>
+																<li>scroll-margin-block-end</li>
+																<li>scroll-margin-block-start</li>
+																<li>scroll-margin-bottom</li>
+																<li>scroll-margin-inline</li>
+																<li>scroll-margin-inline-end</li>
+																<li>scroll-margin-inline-start</li>
+																<li>scroll-margin-left</li>
+																<li>scroll-margin-right</li>
+																<li>scroll-margin-top</li>
+																<li>scroll-padding</li>
+																<li>scroll-padding-block</li>
+																<li>scroll-padding-block-end</li>
+																<li>scroll-padding-block-start</li>
+																<li>scroll-padding-bottom</li>
+																<li>scroll-padding-inline</li>
+																<li>scroll-padding-inline-end</li>
+																<li>scroll-padding-inline-start</li>
+																<li>scroll-padding-left</li>
+																<li>scroll-padding-right</li>
+																<li>scroll-padding-top</li>
+																<li>scroll-snap-coordinate</li>
+																<li>scroll-snap-destination</li>
+																<li>scrollbar-color</li>
+																<li>shape-image-threshold</li>
+																<li>shape-margin</li>
+																<li>shape-outside</li>
+																<li>tab-size</li>
+																<li>text-decoration</li>
+																<li>text-decoration-color</li>
+																<li>text-decoration-thickness</li>
+																<li>text-emphasis</li>
+																<li>text-emphasis-color</li>
+																<li>text-indent</li>
+																<li>text-shadow</li>
+																<li>text-underline-offset</li>
+																<li>top</li>
+																<li>transform</li>
+																<li>transform-origin</li>
+																<li>translate</li>
+																<li>vertical-align</li>
+																<li>visibility</li>
+																<li>width</li>
+																<li>word-spacing</li>
+																<li>z-index</li>
+																<li>zoom</li>
+															</ul>
+														</div>
+													</div>
+
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:background-color 0.5s;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход будет применен <strong>только</strong> к свойству <strong>background-color</strong></p>
+
+													<!-- Встроенный спойлер -->
+													<div class="itprofessions-list-item transitions-spoller">
+														<div class="itprofessions-list-item-header spoller">
+															<div class="itprofessions-list-item-header__title">Шпаргалка CSS свойств, которые можно анимировать</div>
+														</div>
+														<div class="itprofessions-sublist transitions-spoller-body">
+															<ul class="transitions-spoller-list">
+																<li>-moz-outline-radius</li>
+																<li>-moz-outline-radius-bottomleft</li>
+																<li>-moz-outline-radius-bottomright</li>
+																<li>-moz-outline-radius-topleft</li>
+																<li>-moz-outline-radius-topright</li>
+																<li>-webkit-line-clamp</li>
+																<li>-webkit-text-fill-color</li>
+																<li>-webkit-text-stroke</li>
+																<li>-webkit-text-stroke-color</li>
+																<li>all</li>
+																<li>backdrop-filter</li>
+																<li>background</li>
+																<li>background-color</li>
+																<li>background-position</li>
+																<li>background-size</li>
+																<li>border</li>
+																<li>border-bottom</li>
+																<li>border-bottom-color</li>
+																<li>border-bottom-left-radius</li>
+																<li>border-bottom-right-radius</li>
+																<li>border-bottom-width</li>
+																<li>border-color</li>
+																<li>border-end-end-radius</li>
+																<li>border-end-start-radius</li>
+																<li>border-image-outset</li>
+																<li>border-image-slice</li>
+																<li>border-image-width</li>
+																<li>border-left</li>
+																<li>border-left-color</li>
+																<li>border-left-width</li>
+																<li>border-radius</li>
+																<li>border-right</li>
+																<li>border-right-color</li>
+																<li>border-right-width</li>
+																<li>border-start-end-radius</li>
+																<li>border-start-start-radius</li>
+																<li>border-top</li>
+																<li>border-top-color</li>
+																<li>border-top-left-radius</li>
+																<li>border-top-right-radius</li>
+																<li>border-top-width</li>
+																<li>border-width</li>
+																<li>bottom</li>
+																<li>box-shadow</li>
+																<li>caret-color</li>
+																<li>clip</li>
+																<li>clip-path</li>
+																<li>color</li>
+																<li>column-count</li>
+																<li>column-gap</li>
+																<li>column-rule</li>
+																<li>column-rule-color</li>
+																<li>column-rule-width</li>
+																<li>column-width</li>
+																<li>columns</li>
+																<li>filter</li>
+																<li>flex</li>
+																<li>flex-basis</li>
+																<li>flex-grow</li>
+																<li>flex-shrink</li>
+																<li>font</li>
+																<li>font-size</li>
+																<li>font-size-adjust</li>
+																<li>font-stretch</li>
+																<li>font-variation-settings</li>
+																<li>font-weight</li>
+																<li>gap</li>
+																<li>grid-column-gap</li>
+																<li>grid-gap</li>
+																<li>grid-row-gap</li>
+																<li>grid-template-columns</li>
+																<li>grid-template-rows</li>
+																<li>height</li>
+																<li>inset</li>
+																<li>inset-block</li>
+																<li>inset-block-end</li>
+																<li>inset-block-start</li>
+																<li>inset-inline</li>
+																<li>inset-inline-end</li>
+																<li>inset-inline-start</li>
+																<li>left</li>
+																<li>letter-spacing</li>
+																<li>line-clamp</li>
+																<li>line-height</li>
+																<li>margin</li>
+																<li>margin-bottom</li>
+																<li>margin-left</li>
+																<li>margin-right</li>
+																<li>margin-top</li>
+																<li>mask</li>
+																<li>mask-border</li>
+																<li>mask-position</li>
+																<li>mask-size</li>
+																<li>max-height</li>
+																<li>max-lines</li>
+																<li>max-width</li>
+																<li>min-height</li>
+																<li>min-width</li>
+																<li>object-position</li>
+																<li>offset</li>
+																<li>offset-anchor</li>
+																<li>offset-distance</li>
+																<li>offset-path</li>
+																<li>offset-position</li>
+																<li>offset-rotate</li>
+																<li>opacity</li>
+																<li>order</li>
+																<li>outline</li>
+																<li>outline-color</li>
+																<li>outline-offset</li>
+																<li>outline-width</li>
+																<li>padding</li>
+																<li>padding-bottom</li>
+																<li>padding-left</li>
+																<li>padding-right</li>
+																<li>padding-top</li>
+																<li>perspective</li>
+																<li>perspective-origin</li>
+																<li>right</li>
+																<li>rotate</li>
+																<li>row-gap</li>
+																<li>scale</li>
+																<li>scroll-margin</li>
+																<li>scroll-margin-block</li>
+																<li>scroll-margin-block-end</li>
+																<li>scroll-margin-block-start</li>
+																<li>scroll-margin-bottom</li>
+																<li>scroll-margin-inline</li>
+																<li>scroll-margin-inline-end</li>
+																<li>scroll-margin-inline-start</li>
+																<li>scroll-margin-left</li>
+																<li>scroll-margin-right</li>
+																<li>scroll-margin-top</li>
+																<li>scroll-padding</li>
+																<li>scroll-padding-block</li>
+																<li>scroll-padding-block-end</li>
+																<li>scroll-padding-block-start</li>
+																<li>scroll-padding-bottom</li>
+																<li>scroll-padding-inline</li>
+																<li>scroll-padding-inline-end</li>
+																<li>scroll-padding-inline-start</li>
+																<li>scroll-padding-left</li>
+																<li>scroll-padding-right</li>
+																<li>scroll-padding-top</li>
+																<li>scroll-snap-coordinate</li>
+																<li>scroll-snap-destination</li>
+																<li>scrollbar-color</li>
+																<li>shape-image-threshold</li>
+																<li>shape-margin</li>
+																<li>shape-outside</li>
+																<li>tab-size</li>
+																<li>text-decoration</li>
+																<li>text-decoration-color</li>
+																<li>text-decoration-thickness</li>
+																<li>text-emphasis</li>
+																<li>text-emphasis-color</li>
+																<li>text-indent</li>
+																<li>text-shadow</li>
+																<li>text-underline-offset</li>
+																<li>top</li>
+																<li>transform</li>
+																<li>transform-origin</li>
+																<li>translate</li>
+																<li>vertical-align</li>
+																<li>visibility</li>
+																<li>width</li>
+																<li>word-spacing</li>
+																<li>z-index</li>
+																<li>zoom</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>background-color</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>background-color 0.5s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>																							
+
+												</div>
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:background-color, top 0.5s;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход будет применен <strong>только</strong> к свойствам <strong>background-color и top</strong></p>
+
+													<!-- Встроенный спойлер -->
+													<div class="itprofessions-list-item transitions-spoller">
+														<div class="itprofessions-list-item-header spoller">
+															<div class="itprofessions-list-item-header__title">Шпаргалка CSS свойств, которые можно анимировать</div>
+														</div>
+														<div class="itprofessions-sublist transitions-spoller-body">
+															<ul class="transitions-spoller-list">
+																<li>-moz-outline-radius</li>
+																<li>-moz-outline-radius-bottomleft</li>
+																<li>-moz-outline-radius-bottomright</li>
+																<li>-moz-outline-radius-topleft</li>
+																<li>-moz-outline-radius-topright</li>
+																<li>-webkit-line-clamp</li>
+																<li>-webkit-text-fill-color</li>
+																<li>-webkit-text-stroke</li>
+																<li>-webkit-text-stroke-color</li>
+																<li>all</li>
+																<li>backdrop-filter</li>
+																<li>background</li>
+																<li>background-color</li>
+																<li>background-position</li>
+																<li>background-size</li>
+																<li>border</li>
+																<li>border-bottom</li>
+																<li>border-bottom-color</li>
+																<li>border-bottom-left-radius</li>
+																<li>border-bottom-right-radius</li>
+																<li>border-bottom-width</li>
+																<li>border-color</li>
+																<li>border-end-end-radius</li>
+																<li>border-end-start-radius</li>
+																<li>border-image-outset</li>
+																<li>border-image-slice</li>
+																<li>border-image-width</li>
+																<li>border-left</li>
+																<li>border-left-color</li>
+																<li>border-left-width</li>
+																<li>border-radius</li>
+																<li>border-right</li>
+																<li>border-right-color</li>
+																<li>border-right-width</li>
+																<li>border-start-end-radius</li>
+																<li>border-start-start-radius</li>
+																<li>border-top</li>
+																<li>border-top-color</li>
+																<li>border-top-left-radius</li>
+																<li>border-top-right-radius</li>
+																<li>border-top-width</li>
+																<li>border-width</li>
+																<li>bottom</li>
+																<li>box-shadow</li>
+																<li>caret-color</li>
+																<li>clip</li>
+																<li>clip-path</li>
+																<li>color</li>
+																<li>column-count</li>
+																<li>column-gap</li>
+																<li>column-rule</li>
+																<li>column-rule-color</li>
+																<li>column-rule-width</li>
+																<li>column-width</li>
+																<li>columns</li>
+																<li>filter</li>
+																<li>flex</li>
+																<li>flex-basis</li>
+																<li>flex-grow</li>
+																<li>flex-shrink</li>
+																<li>font</li>
+																<li>font-size</li>
+																<li>font-size-adjust</li>
+																<li>font-stretch</li>
+																<li>font-variation-settings</li>
+																<li>font-weight</li>
+																<li>gap</li>
+																<li>grid-column-gap</li>
+																<li>grid-gap</li>
+																<li>grid-row-gap</li>
+																<li>grid-template-columns</li>
+																<li>grid-template-rows</li>
+																<li>height</li>
+																<li>inset</li>
+																<li>inset-block</li>
+																<li>inset-block-end</li>
+																<li>inset-block-start</li>
+																<li>inset-inline</li>
+																<li>inset-inline-end</li>
+																<li>inset-inline-start</li>
+																<li>left</li>
+																<li>letter-spacing</li>
+																<li>line-clamp</li>
+																<li>line-height</li>
+																<li>margin</li>
+																<li>margin-bottom</li>
+																<li>margin-left</li>
+																<li>margin-right</li>
+																<li>margin-top</li>
+																<li>mask</li>
+																<li>mask-border</li>
+																<li>mask-position</li>
+																<li>mask-size</li>
+																<li>max-height</li>
+																<li>max-lines</li>
+																<li>max-width</li>
+																<li>min-height</li>
+																<li>min-width</li>
+																<li>object-position</li>
+																<li>offset</li>
+																<li>offset-anchor</li>
+																<li>offset-distance</li>
+																<li>offset-path</li>
+																<li>offset-position</li>
+																<li>offset-rotate</li>
+																<li>opacity</li>
+																<li>order</li>
+																<li>outline</li>
+																<li>outline-color</li>
+																<li>outline-offset</li>
+																<li>outline-width</li>
+																<li>padding</li>
+																<li>padding-bottom</li>
+																<li>padding-left</li>
+																<li>padding-right</li>
+																<li>padding-top</li>
+																<li>perspective</li>
+																<li>perspective-origin</li>
+																<li>right</li>
+																<li>rotate</li>
+																<li>row-gap</li>
+																<li>scale</li>
+																<li>scroll-margin</li>
+																<li>scroll-margin-block</li>
+																<li>scroll-margin-block-end</li>
+																<li>scroll-margin-block-start</li>
+																<li>scroll-margin-bottom</li>
+																<li>scroll-margin-inline</li>
+																<li>scroll-margin-inline-end</li>
+																<li>scroll-margin-inline-start</li>
+																<li>scroll-margin-left</li>
+																<li>scroll-margin-right</li>
+																<li>scroll-margin-top</li>
+																<li>scroll-padding</li>
+																<li>scroll-padding-block</li>
+																<li>scroll-padding-block-end</li>
+																<li>scroll-padding-block-start</li>
+																<li>scroll-padding-bottom</li>
+																<li>scroll-padding-inline</li>
+																<li>scroll-padding-inline-end</li>
+																<li>scroll-padding-inline-start</li>
+																<li>scroll-padding-left</li>
+																<li>scroll-padding-right</li>
+																<li>scroll-padding-top</li>
+																<li>scroll-snap-coordinate</li>
+																<li>scroll-snap-destination</li>
+																<li>scrollbar-color</li>
+																<li>shape-image-threshold</li>
+																<li>shape-margin</li>
+																<li>shape-outside</li>
+																<li>tab-size</li>
+																<li>text-decoration</li>
+																<li>text-decoration-color</li>
+																<li>text-decoration-thickness</li>
+																<li>text-emphasis</li>
+																<li>text-emphasis-color</li>
+																<li>text-indent</li>
+																<li>text-shadow</li>
+																<li>text-underline-offset</li>
+																<li>top</li>
+																<li>transform</li>
+																<li>transform-origin</li>
+																<li>translate</li>
+																<li>vertical-align</li>
+																<li>visibility</li>
+																<li>width</li>
+																<li>word-spacing</li>
+																<li>z-index</li>
+																<li>zoom</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>background-color, top</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>background-color, top 0.5s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>																							
+
+												</div>																						
+
+											</div>
+										</div>
+									</div>
+									
+
+									<!-- Третий сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Transition-delay</h3>
+												<div class="spoller__subtitle">Задержка выполнения перехода. Позволяет сделать так, чтобы изменение свойства происходило не моментально, а с некоторой задержкой. Время задержки перехода указывается в секундах или миллисекундах. Свойство не наследуется.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">0s<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">1s</div>
+												<div class="nav-sector__item tab__navitem">500ms</div>
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s 0s;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход будет применен <strong>без</strong> задержки</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s 1s;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход будет применен <strong>через одну секунду</strong> задержки</p>
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>						
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>1s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s 1s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>													
+
+												</div>
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s 500ms;" class="button button_1">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход будет применен <strong>через 500 миллисекунд</strong> задержки</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>						
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>500ms</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">top: 2px;</span>
+															<span class="code-item__descr">box-shadow: 0 3px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s 500ms</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>													
+
+												</div>											
+
+											</div>
+										</div>
+									</div>
+									
+
+									<!-- Четвертый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Transition-timing-function</h3>
+												<div class="spoller__subtitle">Задаёт стиль нашего перехода, то есть некий сценарий, по которому будет осуществятся анимация.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+
+											<!-- Навигация табов -->
+											<div class="sector-block-nav nav-sector">
+												<div class="nav-sector__item tab__navitem active">ease<small>по умолчанию</small></div>
+												<div class="nav-sector__item tab__navitem">ease-in</div>
+												<div class="nav-sector__item tab__navitem">ease-out</div>
+												<div class="nav-sector__item tab__navitem">ease-in-out</div>
+												<div class="nav-sector__item tab__navitem">linear</div>
+												<div class="nav-sector__item tab__navitem">steps(int,start|end)</div>
+												<div class="nav-sector__item tab__navitem">cubic-bezier(x1,y1,x2,y2)</div>
+											</div>
+
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s ease 0s;" class="button button_2">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход начинается медленно, разгоняется быстро и замедляется в конце. Соответствует cubic-bezier(0.25,0.1,0.25,1).</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>ease</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>			
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s ease 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+
+												</div>
+
+												<!-- Второй таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s ease-in 0s;" class="button button_2">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход начинается медленно, а затем плавно ускоряется в конце. Соответствует cubic-bezier(0.42,0,1,1).</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>ease-in</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>			
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+													
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s ease-in 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>																							
+
+												</div>
+
+												<!-- Третий таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s ease-out 0s;" class="button button_2">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход начинается быстро и плавно замедляется в конце. Соответствует cubic-bezier(0,0,0.58,1).</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>ease-out</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>			
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+													
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s ease-out 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>			
+
+												</div>	
+
+												<!-- Четвертый таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s ease-in-out 0s;" class="button button_2">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход медленно начинается и медленно заканчивается. Соответствует cubic-bezier(0.42,0,0.58,1).</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>ease-in-out</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>			
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+													
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s ease-in-out 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+
+												</div>
+
+												<!-- Пятый таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s linear 0s;" class="button button_2">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Переход происходит равномерно на протяжении всего времени, без колебаний в скорости. Соответствует cubic-bezier(0,0,1,1).</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>linear</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>			
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>													
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s linear 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+													
+												</div>
+
+												<!-- Шестой таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s steps(2,start) 0s;" class="button button_2">Наведи на меня <small>(2, start)</small></a>
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s steps(2,end) 0s;" class="button button_2">Наведи на меня <small>(2, end)</small></a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Временная функция позволяет разбить анимацию на чёткое количество шагов указанных в int. Так же можно задать момент выполнения: Start – означает, что при начале анимации нужно сразу применить первое изменение. End - означало бы, что изменения нужно применять не в начале, а в конце каждого шага</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>steps(2,start)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_2{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>steps(2,end)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1,</p>
+														<p class="code-item__main">.button_2:hover{</p>		
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>													
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s steps(2,start) 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_2{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s steps(2,end) 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+													
+												</div>
+
+												<!-- Седьмой таб -->
+												<div class="sector-block-item tab__item">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55) 0s;" class="button button_2">Наведи на меня <small>(0.68,-0.55,0.265,1.55)</small></a>
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s cubic-bezier(0.75, 0.99, 0.21, 0.01) 0s;" class="button button_2">Наведи на меня <small>(0.75, 0.99, 0.21, 0.01)</small></a>
+																<a href="https://fls.guru/csstransition.html" style="transition:all 0.5s cubic-bezier(0.75, -1, 0.21, -1) 0s;" class="button button_2">Наведи на меня <small>(0.75, -1, 0.21, -1)</small></a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Позволяет вручную установить значения (положительные и отрицательные) для кривой ускорения и создать свою собственную анимацию</p>
+
+													<!-- Встроенный спойлер -->
+													<div class="itprofessions-list-item transitions-spoller">
+														<div class="itprofessions-list-item-header spoller">
+															<div class="itprofessions-list-item-header__title">Шпаргалка различных значений cubic-bezier</div>
+														</div>
+														<div class="itprofessions-sublist transitions-spoller-body">
+															<div class="transitions-spoller__row">
+																<div class="transitions-spoller__column">
+																	<div class="transitions-spoller__image">
+																		<img src="./index_files/easing.png" alt="">
+																	</div>
+																	<div class="transitions-spoller__info">Пользовательские функции cubic Bézier с сайта easings.net</div>
+																</div>
+																<div class="transitions-spoller__column">
+																	<table class="transitions-spoller-table">
+																		<tbody>
+																			<tr>
+																				<th>Название</th>
+																				<th>Значение функции</th>
+																			</tr>
+																			<tr>
+																				<td>easeInSine</td>
+																				<td><kbd>cubic-bezier(0.47, 0, 0.745, 0.715)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutSine</td>
+																				<td><kbd>cubic-bezier(0.39, 0.575, 0.565, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutSine</td>
+																				<td><kbd>cubic-bezier(0.445, 0.05, 0.55, 0.95)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInQuad</td>
+																				<td><kbd>cubic-bezier(0.55, 0.085, 0.68, 0.53)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutQuad</td>
+																				<td><kbd>cubic-bezier(0.25, 0.46, 0.45, 0.94)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutQuad</td>
+																				<td><kbd>cubic-bezier(0.455, 0.03, 0.515, 0.955)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInCubic</td>
+																				<td><kbd>cubic-bezier(0.55, 0.055, 0.675, 0.19)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutCubic</td>
+																				<td><kbd>cubic-bezier(0.215, 0.61, 0.355, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutCubic</td>
+																				<td><kbd>cubic-bezier(0.645, 0.045, 0.355, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInQuart</td>
+																				<td><kbd>cubic-bezier(0.895, 0.03, 0.685, 0.22)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutQuart</td>
+																				<td><kbd>cubic-bezier(0.165, 0.84, 0.44, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutQuart</td>
+																				<td><kbd>cubic-bezier(0.77, 0, 0.175, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInQuint</td>
+																				<td><kbd>cubic-bezier(0.755, 0.05, 0.855, 0.06)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutQuint</td>
+																				<td><kbd>cubic-bezier(0.23, 1, 0.32, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutQuint</td>
+																				<td><kbd>cubic-bezier(0.86, 0, 0.07, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInExpo</td>
+																				<td><kbd>cubic-bezier(0.95, 0.05, 0.795, 0.035)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutExpo</td>
+																				<td><kbd>cubic-bezier(0.19, 1, 0.22, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutExpo</td>
+																				<td><kbd>cubic-bezier(1, 0, 0, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInCirc</td>
+																				<td><kbd>cubic-bezier(0.6, 0.04, 0.98, 0.335)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutCirc</td>
+																				<td><kbd>cubic-bezier(0.075, 0.82, 0.165, 1)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutCirc</td>
+																				<td><kbd>cubic-bezier(0.785, 0.135, 0.15, 0.86)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInBack</td>
+																				<td><kbd>cubic-bezier(0.6, -0.28, 0.735, 0.045)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeOutBack</td>
+																				<td><kbd>cubic-bezier(0.175, 0.885, 0.32, 1.275)</kbd></td>
+																			</tr>
+																			<tr>
+																				<td>easeInOutBack</td>
+																				<td><kbd>cubic-bezier(0.68, -0.55, 0.265, 1.55)</kbd></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+
+														</div>
+													</div>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>cubic-bezier(0.68,-0.55,0.265,1.55)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_2{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>cubic-bezier(0.75, 0.99, 0.21, 0.01)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_3{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>all</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>0.5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>cubic-bezier(0.75, -1, 0.21, -1)</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1,</p>
+														<p class="code-item__main">.button_2,</p>
+														<p class="code-item__main">.button_3:hover{</p>		
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>													
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55) 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_2{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s cubic-bezier(0.75, 0.99, 0.21, 0.01) 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_3{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>all 0.5s cubic-bezier(0.75, -1, 0.21, -1) 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+													
+												</div>
+
+											</div>
+										</div>
+									</div>
+									
+
+									<!-- Пятый сектор -->
+									<div class="cssbackground__sector sector-block">
+
+										<!-- Спойлер -->
+										<div class="sector-block__spoller spoller">
+											<div class="spoller__text">
+												<h3 class="spoller__title">Значения перехода для каждого свойства</h3>
+												<div class="spoller__subtitle">Для элемента можно задать несколько последовательных переходов, перечислив их через запятую. Каждый переход можно оформить своими значениями перехода.</div>
+											</div>
+											<div class="spoller__icons">
+												<svg class="spoller__icon-cross"><use xlink:href="#spoller-cross"></use></svg>
+											</div>
+										</div>
+
+										<!-- Табы -->
+										<div class="sector-block__tabs tabs">
+											
+											<!-- Тело табов -->
+											<div class="sector-block-body tab-block">
+
+												<!-- Активный таб -->
+												<div class="sector-block-item tab__item active">
+
+													<!-- Область с визуальным результатом -->
+													<div class="block-item-block">
+														<div class="block-item-block__value">
+															<div class="transitions">
+																<a href="https://fls.guru/csstransition.html" style="transition: background-color 1s ease 0.5s, padding 5s ease-out 0s;" class="button button_2">Наведи на меня</a>
+															</div>
+														</div>
+													</div>
+
+													<!-- Пояснение с конкретным кодом -->	
+													<p class="block-item__text">Пример применения персональных значений перехода для конкретного CSS свойства</p>
+
+													<div class="block-item__label">CSS код:</div>
+													<div class="block-item__code code-item">
+														<small>/* общие стили кнопки и текста */</small>
+														<p class="code-item__main">.button{</p>
+															<span class="code-item__descr">display: flex;</span>
+															<span class="code-item__descr">text-align: center;</span>
+															<span class="code-item__descr">justify-content:center;</span>
+															<span class="code-item__descr">align-items: center;</span>
+															<span class="code-item__descr">min-height: 60px;</span>
+															<span class="code-item__descr">padding: 0px 30px;</span>
+															<span class="code-item__descr">text-transform: uppercase;</span>
+															<span class="code-item__descr">letter-spacing: 2px;</span>
+															<span class="code-item__descr">font-size: 18px;</span>
+															<span class="code-item__descr">border-radius: 10px;</span>
+															<span class="code-item__descr">position: relative;</span>
+															<span class="code-item__descr">top: 0;</span>
+														<p class="code-item__main">}</p>
+														<small>/* стили для конкретной кнопки */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr">color: <i style="background-color: #fff;">#fff</i>;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #5e5373;color: #fff;">#5e5373</i>;</span>
+															<span class="code-item__descr">box-shadow: 0 5px 0px <i style="background-color: #3c354a;color: #fff;">#3c354a;</i></span>
+															<span class="code-item__descr"><b>transition-property: <strong>background-color, padding</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-duration: <strong>1s, 5s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-delay: <strong>0.5s, 0s</strong>;</b></span>
+															<span class="code-item__descr"><b>transition-timing-function: <strong>ease, ease-out</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<p class="code-item__main">.button_1:hover{</p>
+															<span class="code-item__descr">padding: 0px 50px;</span>
+															<span class="code-item__descr">background-color: <i style="background-color: #18b5a4;">#18b5a4</i>;</span>
+														<p class="code-item__main">}</p>
+													</div>
+
+													<div class="block-item__or">Или (универсальная запись):</div>
+													<div class="block-item__code code-item">
+														<small>/* все те же стили кнопки и текста */</small>
+														<p class="code-item__main">.button_1{</p>
+															<span class="code-item__descr"><small>/* все те же стили конкретной кнопки */</small></span>
+															<span class="code-item__descr"><b>transition: <strong>background-color 1s ease 0.5s, padding 5s ease-out 0s</strong>;</b></span>
+														<p class="code-item__main">}</p>
+														<small>/* все то же событие */</small>
+													</div>
+
+												</div>																						
+
+											</div>
+										</div>
+									</div>
+									
+								
+									
+								</div>
+
+								<!-- Последний блок -->
+								<div class="cssbackground__bottom-block">									
+									<h4 class="cssbackground__block-subtitle block-subtitle"><span>Шпаргалка является дополнением к выпуску «CSS переходы (CSS transition)»</span></h4>
+									<div class="cssbackground__block-video block-video">
+										<iframe src="./index_files/yZFg3cuq_LU.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						
+						
+					</div>
+
+					
+<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__row">
+			
+			<!-- Первая колонка -->
+			<div class="footer__main">
+				<a class="footer__logo logo" target="_blank" href="https://www.youtube.com/channel/UCedskVwIKiZJsO8XdJdLKnA">Фрилансер по жизни</a>
+				<div class="footer__descr">YouTube канал</div>
+			</div>
+
+			<!-- Остальные колонки -->				
+			<!-- Вторая -->
+			<div class="footer__column footer__column_1">
+				<div class="footer__title"><span>Соц. сети</span></div>
+				<a target="_blank" href="https://www.facebook.com/freelancerlifestyle/" class="footer__link">FaceBook</a>
+				<a target="_blank" href="https://www.instagram.com/freelancer.lifestyle/" class="footer__link">Instagram</a>
+				
+			</div>
+
+			<!-- Третья -->
+			<div class="footer__column footer__column_2">
+				<div class="footer__title"><span>Полезности</span></div>
+				<a target="_blank" href="http://fls.guru/sublime.html" class="footer__link">Настройка Sublime Text 3</a>
+				<a target="_blank" href="http://fls.guru/bidexample.html" class="footer__link">Шаблон заявки к заказу</a>
+				<a target="_blank" href="http://fls.guru/cssbackground.html" class="footer__link">Шпаргалка CSS свойства</a>
+				<a target="_blank" href="http://fls.guru/flexbox.html" class="footer__link">Шпаргалка по FLEX</a>
+			</div>
+
+			<!-- Последняя -->
+			<div class="footer__column footer__column_3">
+				<div class="footer__subtitle"><span>Проблемы с вёрсткой</span></div>
+				<div class="footer__title"><span>или фронтенд разработкой?</span></div>
+				<a target="_blank" href="https://t.me/flschat" class="footer__btn">Задай свой вопрос</a>					
+			</div>
+
+			
+		</div>
+	</div>
+</footer>
+<svg display="none">	
+
+	<symbol id="spoller-cross" viewBox="0 0 30 30">
+		<path d="M15 1V29" stroke="#ADADAD" stroke-width="2" stroke-linecap="round"></path>
+		<path d="M1 15L29 15" stroke="#ADADAD" stroke-width="2" stroke-linecap="round"></path>
+	</symbol>
+	
+</svg>
+
+
+
+				</div>
+			</div>
+
+
+
+			
+
+		</div>
+<div class="popup">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title"></div>
+				<div class="popup__txt"></div>
+				<form action="https://fls.guru/csstransition.html#" class="popup-form form">
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input">
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email">
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req">
+					</div>
+					<div class="form-button">
+						<button type="submit" class="form__btn btn fw"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-video">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-close"></div>
+			<div class="popup-video__value video"></div>
+		</div>
+	</div>
+</div><script src="./index_files/jquery-3.3.1.min.js.Без названия"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+<script src="./index_files/vendors.js.Без названия"></script>
+<script src="./index_files/main.js.Без названия"></script>
+<script src="./index_files/custom.js.Без названия"></script>
+	
+</body></html>
